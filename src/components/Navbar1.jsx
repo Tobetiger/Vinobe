@@ -1,8 +1,9 @@
-import { Stack } from '@mui/material';
+import { Stack, colors } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { logo } from '../utils/constants';
 
 import SearchBar from './SearchBar';
+import { blue } from '@mui/material/colors';
 
 const Navbar1 = () =>
 (
