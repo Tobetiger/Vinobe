@@ -5,7 +5,7 @@ import { Search } from '@mui/icons-material';
 
 const SearchBar = () => {
 
-const { searchTerm } = useState('');
+const [searchTerm, setSearchTerm] = useState('');
 
 const navigate = useNavigate();
 
@@ -27,14 +27,14 @@ const handleSubmit = (e) =>  {
       border: '0.5px solid #e3e3e3', 
       Pl: 1,
       boxShadow: 'none',
-      mr: { sm: 2.5 },
+      mr: { sm: 5 },
     }}
     >
       <input 
       className="search-bar"
-      placeholder='Search'
+      placeholder='Search'x
       value={searchTerm}
-      
+      onChange={(e) => setSearchTerm(e.target.value) }
       />
       <IconButton type="submit" sx={{ p: '5px', color: 'red' }}>
       <Search />
